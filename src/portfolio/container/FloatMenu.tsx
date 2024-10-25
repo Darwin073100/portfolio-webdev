@@ -1,11 +1,19 @@
 import '../styles/components/FloatMenu.css';
-import { routes as routesIcon } from "../routes/routes"
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-export const FloatMenu = () => {
+type FloatMenuProps = {
+  to: string,
+  icon: string,
+}
+
+interface Props{
+  routes: FloatMenuProps[]
+}
+
+export const FloatMenu = ({ routes }: Props) => {
   return (
     <div className="float-menu">
-      { routesIcon.map( route =>(
+      { routes.map( route =>(
         <NavLink
           to={route.to}
           className={({ isActive })=> `float-menu-item ${ isActive ?'float-menu-item-active': ''}` } 
