@@ -1,6 +1,6 @@
 import { FloatMenu } from "../container/FloatMenu"
 
-export const AboutPage = () => {
+export const WorksPage = () => {
   return (
     <>
       <FloatMenu />

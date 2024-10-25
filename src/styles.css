@@ -22,3 +22,16 @@
     --light-color-90: #e9f5f9;
     --light-color-100: #ffffff;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: ubuntu;
+}
+
+.theme-dark{
+    background-color: var(--dark-color-80);
+    color: var(--light-color-100);
+}
+
+

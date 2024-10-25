@@ -1,5 +1,10 @@
+import { FloatMenu } from "../container/FloatMenu"
+
+
 export const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <>
+      <FloatMenu />
+    </>
   )
 }
