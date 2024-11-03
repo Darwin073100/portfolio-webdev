@@ -1,0 +1,13 @@
+.tecnologies-container{
+    width: 150px;
+    background-color: var(--dark-color-90);
+    border-radius: 70px;
+    padding: 12px;
+}
+
+.tecnologie{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 30px 6px 30px 6px;
+}

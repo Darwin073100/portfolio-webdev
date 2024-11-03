@@ -28,11 +28,36 @@
     margin: 0;
     padding: 0;
     font-family: ubuntu;
+    transition: ease 1s;
 }
 
 .theme-dark{
     background-color: var(--dark-color-80);
     color: var(--light-color-100);
 }
+
+.button{
+    font-size: 16px;
+    padding: 8px 22px 8px 22px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button-icon-white{
+    background-color: var(--light-color-100);
+    display: flex;
+    gap: 8px;
+    transition: all 0.2s;
+    &:hover{
+        background-color: var(--light-color-60);
+    }
+}
+
+.one-tab{
+    margin-left: 12px;
+}
+
+
 
 

@@ -1,7 +1,7 @@
 import '../styles/components/TagElement.css';
 
-export const TagElement = ({ tag }: { tag: string}) => {
+export const TagElement = ({ tag }: { tag: string }) => {
   return (
-    <div className='tag-element'>{ tag }</div>
+    <span className='tag-element'>{ tag }</span>
   )
 }

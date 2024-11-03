@@ -1,0 +1,27 @@
+.information-me{
+    width: 500px;
+}
+
+.information-item{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info-contact-me{
+    display: flex;
+    gap: 4px;
+    color: var(--green-color-100);
+    text-decoration: none;
+    font-size: 25px;
+    div{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: var(--dark-color-50);
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 8px;
+    }
+}

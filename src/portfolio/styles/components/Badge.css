@@ -1,0 +1,7 @@
+.badge{
+    min-width: 10px;
+    background-color: var(--green-color-100);
+    border-radius: 12px;
+    padding: 2px 8px 2px 8px;
+    text-align: center;
+}

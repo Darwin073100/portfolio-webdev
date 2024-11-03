@@ -1,43 +1,23 @@
-import { Link, NavLink } from "react-router-dom"
-import '../styles/container/NavBar.css'
-import { TagElement } from "../components/TagElement"
+import { NavBar } from "../container/NavBar"
+import { TagElement } from '../components/TagElement'
+import { ProfileCard } from '../container/ProfileCard';
+import { InformationMe } from '../container/InformationMe';
+import '../styles/container/NavBar.css';
+import '../styles/pages/HomePage.css';
+import { TecnologiesCounter } from "../container/TecnologiesCounter";
+
 export const HomePage = () => {
   return (
     <>
-      <div className="nav-bar">
-        <div className="nav-bar-item">
-          <span style={{fontSize: '25px', display: 'flex', gap: '2px'}}>
-            <TagElement tag="<DEV/>"/> 
-            Edwin Garcia Quiterio
-          </span>
-        </div>
-        <div className="nav-bar-item">
-          <div className="navigate-menu">
-            <NavLink className={({isActive})=> isActive? 'navigate-active': ''} to='/home'>Home</NavLink>
-            <NavLink className={({isActive})=> isActive? 'navigate-active': ''} to='/blogs'>Blogs</NavLink>
-          </div>
-            <div className="search-item">
-              <input type="text" placeholder="Search" />
-              <button>
-                <i className="fa fa-search"></i>
-              </button>
-            </div>
-          <div className="nav-bar-item" >
-            <div className="contact-item">
-              <i className="fa fa-linkedin-square"></i>
-              <Link to='/home'>Linkedin</Link>
-            </div>
-            <div className="contact-item">
-              <i className="fa fa-instagram"></i>
-              <Link to='/home'>Instagram</Link>
-            </div>
-            <div className="contact-item">
-              <i className="fa fa-github"></i>
-              <Link to='/home'>Github</Link>
-            </div>
-          </div>
-        </div>
-      </div>
+      <NavBar />
+      <span style={{ fontSize: 50, textAlign: 'center', marginTop: 20, display: 'flex', justifyContent: 'center' }}>
+        <TagElement tag='Desarrollador Web' />
+      </span>
+      <main className='main-container' style={{ margin: '20px 100px 0px 120px' }}>
+        <ProfileCard />
+        <InformationMe />
+        <TecnologiesCounter />
+      </main>
     </>
   )
 }

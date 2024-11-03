@@ -1,0 +1,8 @@
+.info-item{
+    padding: 8px 0 8px 0;
+    display: flex;
+    gap: 8px;
+    i{
+        color: var(--green-color-100)
+    }
+}

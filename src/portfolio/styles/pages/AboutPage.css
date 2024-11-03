@@ -1,0 +1,37 @@
+.about-page{
+    margin-left: 120px ;
+    margin-right: 20px;
+    display: flex;
+    width: calc(100%)-20px;
+    height: 100vh;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text{
+    width: 600px;
+    
+}
+
+.about-image img{
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 8px 8px 2px var(--green-color-100);
+}
+
+.text-about{
+    background-color: var(--dark-color-90);
+    padding: 30px;
+    border-radius: 22px;
+}
+
+.head-text{
+    background-color: var(--dark-color-90);
+    border: 2px var(--green-color-100) solid;
+    border-radius: 12px 0px 12px 0px;
+    padding: 6px;
+    margin-bottom: 22px;
+    display: inline-block;
+    font-size: 22px;
+}
