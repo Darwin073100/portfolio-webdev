@@ -25,15 +25,15 @@ export const NavBar = () => {
                 <div className="nav-bar-item" >
                     <div className="contact-item">
                         <i className="fa fa-linkedin-square"></i>
-                        <Link to='/home'>Linkedin</Link>
+                        <Link to='https://www.linkedin.com/in/edwin310700/' target="_blank">Linkedin</Link>
                     </div>
                     <div className="contact-item">
-                        <i className="fa fa-instagram"></i>
-                        <Link to='/home'>Instagram</Link>
+                        <i className="fa fa-youtube-play" aria-hidden="true"></i>
+                        <Link to='https://www.youtube.com/channel/UC55HwLnzvhBHvsGAVrlSZFg' target="_blank">Youtube</Link>
                     </div>
                     <div className="contact-item">
                         <i className="fa fa-github"></i>
-                        <Link to='/home'>Github</Link>
+                        <Link to='https://github.com/Darwin073100' target="_blank">Github</Link>
                     </div>
                 </div>
             </NavBarItem>

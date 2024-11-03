@@ -1,6 +1,6 @@
 import { InfoItem } from '../components/InfoItem';
 import { BadgeList } from '../container/BadgeList'
-import reactIcon from '../../assets/react.svg';
+import reactIcon from '../../assets/developer.png';
 import '../styles/container/ProfileCard.css';
 
 const infoItem = [
