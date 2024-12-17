@@ -29,7 +29,6 @@ import shopsystem from '../assets/projects/shop.png';
 import springReact from '../assets/projects/spring-react.png';
 import gifexpert from '../assets/projects/gifexpert.png';
 import journalapp from '../assets/projects/journalapp.png';
-import React from 'react';
 
 
 const data = {

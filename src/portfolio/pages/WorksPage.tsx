@@ -1,7 +1,6 @@
 import { data } from "../../utils/data";
 import { Header } from "../components/Header";
 import { TagElement } from "../components/TagElement";
-import imgSrc from '../../assets/projects/facebook.png';
 import '../styles/pages/WorksPage.css';
 import { NavLink } from "react-router-dom";
 export const WorksPage = () => {

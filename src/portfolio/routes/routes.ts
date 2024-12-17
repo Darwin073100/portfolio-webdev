@@ -1,4 +1,4 @@
-import { AboutPage, CertificatesPage, ContactPage, HomePage, SkillsPage, WorksPage } from "../pages";
+import { AboutPage, CertificatesPage, HomePage, SkillsPage, WorksPage } from "../pages";
 
 interface RoutesApp{
     path: string;

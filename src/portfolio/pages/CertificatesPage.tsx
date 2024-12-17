@@ -1,5 +1,4 @@
 import { Header } from "../components/Header"
-import imgSrc from '../../assets/projects/facebook.png';
 import '../styles/pages/CertificatesPage.css';
 import { TagElement } from "../components/TagElement";
 import { data } from "../../utils/data";
