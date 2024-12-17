@@ -8,7 +8,7 @@ export const NavBar = () => {
             <NavBarItem>
                 <span style={{ fontSize: '25px', display: 'flex', gap: '2px' }}>
                     <TagElement tag="<DEV/>" />
-                    Edwin Garcia Quiterio
+                    <span className="span-name">Edwin</span><span className="span-surname">Garcia Quiterio</span>
                 </span>
             </NavBarItem>
             <NavBarItem>

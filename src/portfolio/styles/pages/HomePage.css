@@ -1,5 +1,51 @@
-.main-container{
+.main-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+    .navigate-menu, .search-item, .span-surname{
+        display: none;
+    }
+
+    .nav-bar-item{
+        *{
+            font-size: 14px;
+        }
+    }
+    .float-menu{
+        left: 5px;
+    }
+    .main-container{
+        margin: 20px 0px 0px 5px;
+        flex-direction: column;
+    }
+    .information-me{
+        width: 300px;
+    }
+    .tecnologies-counter{
+        .tecnologies-container{
+            
+            width: 200px;
+            .tecnologie{
+                width: 200px;
+            }
+        }
+    }
+}
+
+/* Tablets y móviles grandes */
+@media (max-width: 768px) {
+    
+
+}
+
+/* Pantallas medianas (laptops pequeñas) */
+@media (max-width: 1024px) {
+
+}
+
+/* Pantallas grandes (laptops grandes o escritorios) */
+@media (max-width: 1440px) {}

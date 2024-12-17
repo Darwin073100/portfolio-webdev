@@ -30,3 +30,17 @@
         width: 50px;
     }
 }
+
+@media (max-width: 480px) {
+    .skill-list{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .global-skill{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .general-main{
+        margin: 20px 50px 20px 65px;
+    }
+}

@@ -35,3 +35,21 @@
     display: inline-block;
     font-size: 22px;
 }
+
+@media (max-width: 480px) {
+    .about-page{
+        flex-direction: column;
+        margin-left: 50px;
+        gap: 20px;
+    }
+    .head-text{
+        width: 200px;
+    }
+    .about-text{
+        width: 300px;
+    }
+
+    .about-image img{
+        width: 300px;
+    }
+}
