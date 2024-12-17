@@ -44,11 +44,11 @@ export const routes: RoutesApp[] = [
         to: '/certificates',
         icon: 'fa-certificate',
     },
-    {
-        path: 'contact',
-        Component: ContactPage,
-        name: 'Contact',
-        to: '/contact',
-        icon: 'fa-envelope-o'
-    }
+    // {
+    //     path: 'contact',
+    //     Component: ContactPage,
+    //     name: 'Contact',
+    //     to: '/contact',
+    //     icon: 'fa-envelope-o'
+    // }
 ];

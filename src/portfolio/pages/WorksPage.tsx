@@ -1,9 +1,9 @@
+import { data } from "../../utils/data";
 import { Header } from "../components/Header";
 import { TagElement } from "../components/TagElement";
 import imgSrc from '../../assets/projects/facebook.png';
 import '../styles/pages/WorksPage.css';
 import { NavLink } from "react-router-dom";
-
 export const WorksPage = () => {
   return (
     <main className="general-main">
@@ -12,48 +12,30 @@ export const WorksPage = () => {
         title='Works' 
         text='El conocimiento es poder, nunca paremos de aprender.'/>
         <div className="works-page">
-          <div className="project-item">
+          {data.projects.map( project =>(
+            <div className="project-item">
             <div className="project-name">
-            <h2><TagElement tag="Nombre del proyecto"/></h2>
-            <NavLink className='link-work-url-code' to={'/'}><i className="fa fa-github"></i></NavLink>
-            <NavLink className='link-work-url-deploy' to={'/'}><i className="fa fa-television"></i></NavLink>
+            <h2><TagElement tag={project.name}/></h2>
+            <NavLink className='link-work-url-code' to={project.github}><i className="fa fa-github"></i></NavLink>
+            {project.deploy && (
+              <NavLink className='link-work-url-deploy' to={project.deploy}>
+                <i className="fa fa-television"></i>
+              </NavLink>
+            )}
             </div>
             <div className="projects-details">
-                <img src={ imgSrc } alt="project" />
+                <img src={ project.picture } alt="project" />
             </div>
             <div className="project-description">
             <TagElement tag='<p>'/>
               <br />
               <h3 className='one-tab'><TagElement tag='Descripción del proyecto'/></h3>
-              <p className='one-tab'>Soy una persona que le gusta los retos, quiero aprender día a día sobre lo que me apasiona, 
-              soy estudiante, comprometido con mi carrera y mi sabiduría. Me gusta ser responsable con mis 
-              tareas, trato de cumplir al <TagElement tag='100 %'/> lo que me corresponde, la responsabilidad es un aspecto muy 
-              importante para mí.</p>
+              <p className='one-tab'>{project.description}</p>
             <TagElement tag='<p>'/>
             <div className="bar"></div>
             </div>
           </div>
-          <div className="project-item">
-            <div className="project-name">
-            <h2><TagElement tag="Nombre del proyecto"/></h2>
-            <NavLink className='link-work-url-code' to={'/'}><i className="fa fa-github"></i></NavLink>
-            <NavLink className='link-work-url-deploy' to={'/'}><i className="fa fa-television"></i></NavLink>
-            </div>
-            <div className="projects-details">
-                <img src={ imgSrc } alt="project" />
-            </div>
-            <div className="project-description">
-            <TagElement tag='<p>'/>
-              <br />
-              <h3 className='one-tab'><TagElement tag='Descripción del proyecto'/></h3>
-              <p className='one-tab'>Soy una persona que le gusta los retos, quiero aprender día a día sobre lo que me apasiona, 
-              soy estudiante, comprometido con mi carrera y mi sabiduría. Me gusta ser responsable con mis 
-              tareas, trato de cumplir al <TagElement tag='100 %'/> lo que me corresponde, la responsabilidad es un aspecto muy 
-              importante para mí.</p>
-            <TagElement tag='<p>'/>
-            <div className="bar"></div>
-            </div>
-          </div>
+          ))}
         </div>
     </main>
   )
