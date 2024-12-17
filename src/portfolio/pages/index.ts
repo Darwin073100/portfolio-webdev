@@ -1,5 +1,5 @@
 export * from './AboutPage';
-export * from './BlogsPage';
+export * from './CertificatesPage';
 export * from './ContactPage';
 export * from './HomePage';
 export * from './SkillsPage';

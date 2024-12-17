@@ -1,4 +1,4 @@
-import { AboutPage, BlogsPage, ContactPage, HomePage, SkillsPage, WorksPage } from "../pages";
+import { AboutPage, CertificatesPage, ContactPage, HomePage, SkillsPage, WorksPage } from "../pages";
 
 interface RoutesApp{
     path: string;
@@ -38,11 +38,11 @@ export const routes: RoutesApp[] = [
         icon: 'fa-television'
     },
     {
-        path: 'blogs',
-        Component: BlogsPage,
-        name: 'Blogs',
-        to: '/blogs',
-        icon: 'fa-pencil-square-o',
+        path: 'certificates',
+        Component: CertificatesPage,
+        name: 'Certificates',
+        to: '/certificates',
+        icon: 'fa-certificate',
     },
     {
         path: 'contact',

@@ -1,0 +1,15 @@
+.certificates-content{
+    margin-top: 40px;
+    display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.certificate-item{
+    text-align: center;
+    img{
+        width: 500px;
+        border-radius: 12px;
+        box-shadow: 6px 6px var(--green-color-100);
+    }
+}
