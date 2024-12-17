@@ -46,7 +46,7 @@ export const ProfileCard = () => {
                 <BadgeList badges={['CSS', 'HTML', 'JS', 'REACT']} />
             </div>
             <div className='profile-footer'>
-                <a className='button button-icon-white' href='/public/CV-Edwin-Garcia.pdf' download='CV-Edwin-Garcia-Quiterio.pdf'>
+                <a className='button button-icon-white' href='/CV-Edwin-Garcia.pdf' download='CV-Edwin-Garcia-Quiterio.pdf'>
                     <span>Dowload CV</span>
                     <i className="fa fa-download" aria-hidden="true"></i>
                 </a>
