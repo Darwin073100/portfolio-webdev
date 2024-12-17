@@ -10,7 +10,7 @@ export const WorksPage = () => {
       <Header
         icon='fa-television' 
         title='Works' 
-        text='El conocimiento es poder, nunca paremos de aprender.'/>
+        text='Lista de proyectos realizados.'/>
         <div className="works-page">
           {data.projects.map( project =>(
             <div className="project-item">

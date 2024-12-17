@@ -16,8 +16,8 @@ export const InformationMe = () => {
         <div className="information-item">
             <TagElement tag="<p>"/>
             <p className="one-tab" style={{margin:'6px 12px 6px 12px'}}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Ullam voluptatibus ratione quis et dolorem magn
+                En este portafolio encontraras una recaudación de todos 
+                los proyectos y tecologías las cuales se tienen conocimiento. 
             </p>
             <TagElement tag="</p>"/>
         </div>
