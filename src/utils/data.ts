@@ -8,6 +8,8 @@ import nodeIcon from '../assets/nodejs.svg';
 import reactIcon from '../assets/react.svg';
 import expressIcon from '../assets/express.svg';
 import viteIcon from '../assets/vite.svg';
+import nestIcon from '../assets/nestjs.png';
+import nextIcon from '../assets/nextjs.png';
 
 import firebaseIcon from '../assets/firebase.svg';
 import dbIcon from '../assets/db.svg';
@@ -21,6 +23,7 @@ import ubuntuIcon from '../assets/ubuntu.svg';
 import html5 from '../assets/html5.svg';
 import css3 from '../assets/css3.svg';
 import bootrstrap from '../assets/bootstrap.svg'
+import jemae from '../assets/jemae1.png';
 
 import facebook from '../assets/projects/facebook.png';
 import maqueta from '../assets/projects/maqueta-profile.png';
@@ -105,16 +108,43 @@ const data = {
     globalSkill:[
         {
             title: 'Desarrollo FrontEnd',
-            tools:['HTML','CSS','JS','React'],
+            tools:['HTML','CSS','JS','React', 'Next'],
             icon: 'fa-television'
         },
         {
             title: 'Desarrollo BackEnd',
-            tools:['JS','Express','Java','SpringBoot'],
+            tools:['JS','Express','Nest','Java','SpringBoot'],
             icon: 'fa-code'
         }
     ],
     tools:[
+        {
+            skill: 'Next.js',
+            image: nextIcon,
+            style:{
+                color: 'white',
+                backgroundColor: 'white'
+            },
+            tools: []
+        },
+        {
+            skill: 'React.js',
+            image: reactIcon,
+            style:{
+                color: 'white',
+                backgroundColor: 'white'
+            },
+            tools: []
+        },
+        {
+            skill: 'Nest.js',
+            image: nestIcon,
+            style:{
+                color: 'white',
+                backgroundColor: 'white'
+            },
+            tools: []
+        },
         {
             skill: 'HTML',
             image: html5,
@@ -159,8 +189,16 @@ const data = {
                     }
                 },
                 {
+                    skill: 'Next.js',
+                    image: nextIcon
+                },
+                {
                     skill: 'Express.js',
                     image: expressIcon
+                },
+                {
+                    skill: 'Nest.js',
+                    image: nestIcon
                 },
             ]
         },
@@ -225,6 +263,37 @@ const data = {
 
     ],
     projects:[
+        {
+            name: 'Control de inventarios',
+            description: `Una plataforma web, para llevar a cabo el control de inventarios, ventas, compras, clientes, emplados, 
+                para entrar y acceder a la plataforma ingresa con las siguientes credenciales, CORREO: jhon@jemae.platform.com, 
+                PASSWORD: admin123. El repositorio es privado. Usando tecnologías como,Nestjs, TypeORM, PostgreSql, Nextjs, ReactJs, Zustand, Typescrip y TailwindCSS.`,
+            github: 'https://github.com/Darwin073100/edyof-platform-web',
+            deploy: 'https://jemae-platform-web.vercel.app/auth/login',
+            picture: jemae,
+            tecnologies:[
+                {
+                    name: 'JavaScript',
+                    picture: javascriptIcon
+                },
+                {
+                    name: 'Nest',
+                    picture: nestIcon
+                },
+                {
+                    name: 'PosgreSQL',
+                    picture: postgressqlIcon
+                },
+                {
+                    name: 'React',
+                    picture: reactIcon
+                },
+                {
+                    name: 'Next',
+                    picture: nextIcon
+                },
+            ]
+        },
         {
             name: 'Journal App',
             description: 'Esta aplicacion web esta conectada a una DB, donde se alojan las actividades diarias que una registra, deberas registrarte y loguearte antes.',

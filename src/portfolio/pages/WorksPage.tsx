@@ -7,35 +7,40 @@ export const WorksPage = () => {
   return (
     <main className="general-main">
       <Header
-        icon='fa-television' 
-        title='Works' 
-        text='Lista de proyectos realizados.'/>
-        <div className="works-page">
-          {data.projects.map( project =>(
-            <div className="project-item">
+        icon='fa-television'
+        title='Works'
+        text='Lista de proyectos realizados.' />
+      <div className="works-page">
+        {data.projects.map(project => (
+          <div className="project-item">
             <div className="project-name">
-            <h2><TagElement tag={project.name}/></h2>
-            <NavLink className='link-work-url-code' to={project.github}><i className="fa fa-github"></i></NavLink>
-            {project.deploy && (
-              <NavLink className='link-work-url-deploy' to={project.deploy}>
-                <i className="fa fa-television"></i>
-              </NavLink>
-            )}
+              <h2><TagElement tag={project.name} /></h2>
+              <NavLink className='link-work-url-code' to={project.github}><i className="fa fa-github"></i></NavLink>
+              {project.deploy && (
+                <NavLink className='link-work-url-deploy' to={project.deploy}>
+                  <i className="fa fa-television"></i>
+                </NavLink>
+              )}
             </div>
             <div className="projects-details">
-                <img src={ project.picture } alt="project" />
+              <img src={project.picture} alt="project" />
+            </div>
+            <div style={{display: "flex", gap: 4}}>
+              { project.tecnologies.map(item => (
+                <img style={{width: 30, borderRadius: '50%', background: 'white', padding: 4}} key={item.name} src={item.picture} alt={item.name} />
+              ))}
             </div>
             <div className="project-description">
-            <TagElement tag='<p>'/>
+              <TagElement tag='<p>' />
               <br />
-              <h3 className='one-tab'><TagElement tag='Descripción del proyecto'/></h3>
+              <h3 className='one-tab'><TagElement tag='Descripción del proyecto' /></h3>
               <p className='one-tab'>{project.description}</p>
-            <TagElement tag='<p>'/>
-            <div className="bar"></div>
+              <TagElement tag='<p>' />
+              <div className="bar"></div>
             </div>
           </div>
-          ))}
-        </div>
+        ))}
+      </div>
     </main>
   )
 }
