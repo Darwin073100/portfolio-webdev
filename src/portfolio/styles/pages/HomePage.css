@@ -6,7 +6,7 @@
 
 /* Móviles pequeños */
 @media (max-width: 480px) {
-    .navigate-menu, .search-item, .span-surname{
+    .navigate-menu, .span-surname{
         display: none;
     }
 

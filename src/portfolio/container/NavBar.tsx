@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { NavBarItem } from "../container/NavBarItem"
 import { TagElement } from "../components/TagElement"
 
@@ -14,26 +14,19 @@ export const NavBar = () => {
             <NavBarItem>
                 <div className="navigate-menu">
                     <NavLink className={({ isActive }) => isActive ? 'navigate-active' : ''} to='/home'>Home</NavLink>
-                    <NavLink className={({ isActive }) => isActive ? 'navigate-active' : ''} to='/blogs'>Blogs</NavLink>
-                </div>
-                <div className="search-item">
-                    <input type="text" placeholder="Search" />
-                    <button>
-                        <i className="fa fa-search"></i>
-                    </button>
                 </div>
                 <div className="nav-bar-item" >
                     <div className="contact-item">
                         <i className="fa fa-linkedin-square"></i>
-                        <Link to='https://www.linkedin.com/in/edwin310700/' target="_blank">Linkedin</Link>
+                        <a href='https://www.linkedin.com/in/edwin310700/' target="_blank" rel="noopener noreferrer">Linkedin</a>
                     </div>
                     <div className="contact-item">
                         <i className="fa fa-youtube-play" aria-hidden="true"></i>
-                        <Link to='https://www.youtube.com/channel/UC55HwLnzvhBHvsGAVrlSZFg' target="_blank">Youtube</Link>
+                        <a href='https://www.youtube.com/channel/UC55HwLnzvhBHvsGAVrlSZFg' target="_blank" rel="noopener noreferrer">Youtube</a>
                     </div>
                     <div className="contact-item">
                         <i className="fa fa-github"></i>
-                        <Link to='https://github.com/Darwin073100' target="_blank">Github</Link>
+                        <a href='https://github.com/Darwin073100' target="_blank" rel="noopener noreferrer">Github</a>
                     </div>
                 </div>
             </NavBarItem>

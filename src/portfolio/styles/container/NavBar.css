@@ -24,23 +24,6 @@
     }
 }
 
-.search-item{
-    background-color: var(--light-color-100);
-    border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    input{
-        background-color: transparent;
-        border: none;
-        outline-style: none;
-    }
-    button{
-        background-color: transparent;
-        border: none;
-    }
-}
 
 .contact-item{
     display: flex;

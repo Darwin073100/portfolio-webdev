@@ -50,6 +50,49 @@ const data = {
     name: 'Edwin',
     surname: 'Garcia Quiterio',
     cvUrl: '/CV-Edwin-Garcia-Quiterio.pdf',
+    profile: {
+        title: 'Desarrollador Full Stack y Móvil',
+        headline: 'Desarrollador Full Stack',
+        summary: 'Construyo aplicaciones web y móviles con TypeScript, React, Next.js, NestJS y React Native, aplicando Clean Architecture y pruebas con Jest.',
+        email: 'edwinegq@outlook.com',
+        badges: ['TypeScript', 'React', 'Next.js', 'NestJS', 'React Native', 'PostgreSQL'],
+        info: [
+            {
+                id: 1,
+                icon: 'fa-envelope-o',
+                value: 'edwinegq@outlook.com'
+            },
+            {
+                id: 2,
+                icon: 'fa-map-marker',
+                value: 'Ometepec, Guerrero, México'
+            },
+            {
+                id: 3,
+                icon: 'fa-briefcase',
+                value: 'Disponible para trabajo remoto'
+            },
+            {
+                id: 4,
+                icon: 'fa-link',
+                value: 'edwinegq-portfolio.netlify.app'
+            },
+        ]
+    },
+    stats: [
+        {
+            value: '2+',
+            label: 'Años de experiencia'
+        },
+        {
+            value: '30+',
+            label: 'Cursos aprobados en Platzi'
+        },
+        {
+            value: '500+',
+            label: 'Commits en JEEMA'
+        },
+    ],
     contact:[
         {
             id: 1,

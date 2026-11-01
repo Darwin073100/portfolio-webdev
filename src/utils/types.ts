@@ -5,6 +5,26 @@ export interface Contact {
     img: string;
 }
 
+export interface InfoEntry {
+    id: number;
+    icon: string;
+    value: string;
+}
+
+export interface Profile {
+    title: string;
+    headline: string;
+    summary: string;
+    email: string;
+    badges: string[];
+    info: InfoEntry[];
+}
+
+export interface Stat {
+    value: string;
+    label: string;
+}
+
 export interface Certificate {
     title: string;
     image: string;
@@ -44,6 +64,8 @@ export interface PortfolioData {
     name: string;
     surname: string;
     cvUrl: string;
+    profile: Profile;
+    stats: Stat[];
     contact: Contact[];
     certificates: Certificate[];
     globalSkill: GlobalSkill[];

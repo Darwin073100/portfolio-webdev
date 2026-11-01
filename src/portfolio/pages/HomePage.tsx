@@ -5,13 +5,14 @@ import { InformationMe } from '../container/InformationMe';
 import '../styles/container/NavBar.css';
 import '../styles/pages/HomePage.css';
 import { TecnologiesCounter } from "../container/TecnologiesCounter";
+import { data } from "../../utils/data";
 
 export const HomePage = () => {
   return (
     <>
       <NavBar />
       <span style={{ fontSize: 50, textAlign: 'center', marginTop: 20, display: 'flex', justifyContent: 'center' }}>
-        <TagElement tag='Desarrollador Web' />
+        <TagElement tag={data.profile.headline} />
       </span>
       <main className='main-container' style={{ margin: '20px 100px 0px 120px' }}>
         <ProfileCard />
