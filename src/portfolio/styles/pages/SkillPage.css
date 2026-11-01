@@ -5,40 +5,68 @@
 .skill-page{
     margin-top: 30px;
 }
-.skill-list{
+.skill-groups{
     margin-top: 50px;
     display: flex;
-    justify-content: center;
-    gap: 70px;
+    flex-direction: column;
+    gap: 40px;
+}
+.skill-group-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 400;
+    i{
+        color: var(--green-color-100);
+    }
+}
+.skill-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
 }
 .skill-item{
+    width: 90px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 8px;
     .picture-skill{
-        width:50px;
-        height:50px;
+        width: 44px;
+        height: 44px;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 18px;
+        padding: 14px;
         border-radius: 100%;
+        background-color: var(--light-color-100);
+        i{
+            font-size: 34px;
+            color: var(--dark-color-80);
+        }
     }
     img{
-        width: 50px;
+        width: 44px;
+        height: 44px;
+        object-fit: contain;
+    }
+    span{
+        font-size: 14px;
+        text-align: center;
     }
 }
 
 @media (max-width: 480px) {
     .skill-list{
-        flex-direction: column;
-        gap: 30px;
+        justify-content: center;
+        gap: 20px;
     }
     .global-skill{
         flex-direction: column;
-        gap: 30px;
+        align-items: center;
     }
     .general-main{
         margin: 20px 50px 20px 65px;

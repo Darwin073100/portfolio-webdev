@@ -10,19 +10,30 @@ import expressIcon from '../assets/express.svg';
 import viteIcon from '../assets/vite.svg';
 import nestIcon from '../assets/nestjs.png';
 import nextIcon from '../assets/nextjs.png';
+import typescriptIcon from '../assets/typescript.svg';
+import tailwindIcon from '../assets/tailwindcss.svg';
+import expoIcon from '../assets/expo.svg';
 
 import firebaseIcon from '../assets/firebase.svg';
 import dbIcon from '../assets/db.svg';
 import postgressqlIcon from '../assets/postgresql.svg';
 import mysqlIcon from '../assets/mysql.svg';
 import sqlserverIcon from '../assets/sqlserver.svg';
+import sqliteIcon from '../assets/sqlite.svg';
+import supabaseIcon from '../assets/supabase.svg';
+import typeormIcon from '../assets/typeorm.svg';
 
 import linuxIcon from '../assets/linux.svg';
 import ubuntuIcon from '../assets/ubuntu.svg';
+import jestIcon from '../assets/jest.svg';
+import dockerIcon from '../assets/docker.svg';
+import gitIcon from '../assets/git.svg';
+import githubIcon from '../assets/github.svg';
+import vercelIcon from '../assets/vercel.svg';
 
 import html5 from '../assets/html5.svg';
 import css3 from '../assets/css3.svg';
-import bootrstrap from '../assets/bootstrap.svg'
+import bootstrapIcon from '../assets/bootstrap.svg';
 import jemae from '../assets/jemae1.png';
 
 import facebook from '../assets/projects/facebook.png';
@@ -163,160 +174,103 @@ const data = {
     ],
     globalSkill:[
         {
-            title: 'Desarrollo FrontEnd',
-            tools:['HTML','CSS','JS','React', 'Next'],
+            title: 'Frontend',
+            tools:['TypeScript','React 19','Next.js','Tailwind CSS','CSS Grid / Flexbox'],
             icon: 'fa-television'
         },
         {
-            title: 'Desarrollo BackEnd',
-            tools:['JS','Express','Nest','Java','SpringBoot'],
+            title: 'Backend',
+            tools:['NestJS','Node.js','Express.js','APIs REST','Spring Boot','JSF / EJB'],
             icon: 'fa-code'
+        },
+        {
+            title: 'Móvil',
+            tools:['React Native','Expo','Expo Router','NativeWind','SQLite','Supabase'],
+            icon: 'fa-mobile'
+        },
+        {
+            title: 'Arquitectura, Testing y DevOps',
+            tools:['Clean Architecture','POO','Jest','Docker','Git / GitHub','Vercel','Claude Code'],
+            icon: 'fa-cogs'
         }
     ],
-    tools:[
+    skillGroups:[
         {
-            skill: 'Next.js',
-            image: nextIcon,
-            style:{
-                color: 'white',
-                backgroundColor: 'white'
-            },
-            tools: []
-        },
-        {
-            skill: 'React.js',
-            image: reactIcon,
-            style:{
-                color: 'white',
-                backgroundColor: 'white'
-            },
-            tools: []
-        },
-        {
-            skill: 'Nest.js',
-            image: nestIcon,
-            style:{
-                color: 'white',
-                backgroundColor: 'white'
-            },
-            tools: []
-        },
-        {
-            skill: 'HTML',
-            image: html5,
-            style:{
-                color: '#e44f26',
-                backgroundColor: '#e44f26'
-            },
-            tools: []
-        },
-        {
-            skill: 'CSS',
-            image: css3,
-            style:{
-                color: 'rgb(28 114 182)',
-                backgroundColor: 'rgb(28 114 182)'
-            },
-            tools: [
-                {
-                    skill: 'Bootrstrap',
-                    image: bootrstrap
-                }
+            title: 'Lenguajes',
+            icon: 'fa-code',
+            skills: [
+                { name: 'TypeScript', image: typescriptIcon },
+                { name: 'JavaScript', image: javascriptIcon },
+                { name: 'Java', image: javaIcon },
+                { name: 'SQL', image: dbIcon },
+                { name: 'HTML', image: html5 },
+                { name: 'CSS', image: css3 },
             ]
         },
         {
-            skill: 'JavaScript',
-            image: javascriptIcon,
-            style:{
-                color: 'rgb(247 223 30)',
-                backgroundColor: 'rgb(247 223 30)'
-            },
-            tools:[
-                {
-                    skill: 'Node.js',
-                    image: nodeIcon
-                },
-                {
-                    skill: 'React.js',
-                    image: reactIcon,
-                    style:{
-                        color: 'white',
-                        backgroundColor: 'white'
-                    }
-                },
-                {
-                    skill: 'Next.js',
-                    image: nextIcon
-                },
-                {
-                    skill: 'Express.js',
-                    image: expressIcon
-                },
-                {
-                    skill: 'Nest.js',
-                    image: nestIcon
-                },
+            title: 'Frontend',
+            icon: 'fa-television',
+            skills: [
+                { name: 'React.js', image: reactIcon },
+                { name: 'Next.js', image: nextIcon },
+                { name: 'Tailwind CSS', image: tailwindIcon },
+                { name: 'Bootstrap', image: bootstrapIcon },
             ]
         },
         {
-            skill: 'Java',
-            image: javaIcon,
-            style:{
-                color: 'white',
-                backgroundColor: 'white'
-            },
-            tools:[
-                {
-                    skill: 'Spring Boot',
-                    image: springIcon
-                },
-                {
-                    skill: 'Java ServerFaces',
-                    image: sjfIcon
-                },
-                {
-                    skill: 'Enterprice JavaBeans',
-                    image: ejbIcon
-                },
+            title: 'Móvil',
+            icon: 'fa-mobile',
+            skills: [
+                { name: 'React Native', image: reactIcon },
+                { name: 'Expo', image: expoIcon },
+                { name: 'NativeWind', icon: 'fa-paint-brush' },
             ]
         },
         {
-            skill: 'Bases de datos',
-            image: dbIcon,
-            style:{
-                color: 'white',
-                backgroundColor: 'white'
-            },
-            tools:[
-                {
-                    skill: 'PostgreSQL',
-                    image: postgressqlIcon
-                },
-                {
-                    skill: 'MySQL',
-                    image: mysqlIcon
-                },
-                {
-                    skill: 'Microsoft SQL Server',
-                    image: sqlserverIcon
-                },
+            title: 'Backend',
+            icon: 'fa-server',
+            skills: [
+                { name: 'NestJS', image: nestIcon },
+                { name: 'Node.js', image: nodeIcon },
+                { name: 'Express.js', image: expressIcon },
+                { name: 'Spring Boot', image: springIcon },
+                { name: 'JSF', image: sjfIcon },
+                { name: 'EJB', image: ejbIcon },
             ]
         },
         {
-            skill: 'Linux',
-            image: linuxIcon,
-            style:{
-                color: 'white',
-                backgroundColor: 'white'
-            },
-            tools:[
-                {
-                    skill: 'Ubuntu',
-                    image: ubuntuIcon
-                }
+            title: 'Bases de datos',
+            icon: 'fa-database',
+            skills: [
+                { name: 'PostgreSQL', image: postgressqlIcon },
+                { name: 'MySQL', image: mysqlIcon },
+                { name: 'SQL Server', image: sqlserverIcon },
+                { name: 'SQLite', image: sqliteIcon },
+                { name: 'Supabase', image: supabaseIcon },
+                { name: 'TypeORM', image: typeormIcon },
+                { name: 'Firebase', image: firebaseIcon },
             ]
         },
-
+        {
+            title: 'Testing y DevOps',
+            icon: 'fa-cogs',
+            skills: [
+                { name: 'Jest', image: jestIcon },
+                { name: 'Docker', image: dockerIcon },
+                { name: 'Git', image: gitIcon },
+                { name: 'GitHub', image: githubIcon },
+                { name: 'Vercel', image: vercelIcon },
+                { name: 'Linux', image: linuxIcon },
+                { name: 'Ubuntu', image: ubuntuIcon },
+            ]
+        },
+        {
+            title: 'IA',
+            icon: 'fa-magic',
+            skills: [
+                { name: 'Claude Code', icon: 'fa-magic' },
+            ]
+        },
     ],
     projects:[
         {

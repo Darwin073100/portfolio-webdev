@@ -5,7 +5,7 @@ export const GlobalSkill = () => {
     return (
         <div className='global-skill'>
             {data.globalSkill.map(skill => (
-                <div className='skill-container'>
+                <div className='skill-container' key={skill.title}>
                     <div className='var-h'></div>
                     <div className='skill-in-container'>
                         <i className={`fa ${skill.icon}`}></i>
@@ -13,7 +13,7 @@ export const GlobalSkill = () => {
                             {skill.title}
                         </span>
                         <ul className='skill-tools'>
-                            {skill.tools.map( tool => <li>{ tool }</li>)}
+                            {skill.tools.map( tool => <li key={tool}>{ tool }</li>)}
                         </ul>
                     </div>
                 </div>

@@ -1,18 +1,20 @@
 
 interface Props {
     skill: string;
-    image: string;
+    image?: string;
+    icon?: string;
     className?: string;
-    style?: React.CSSProperties | undefined;
 }
 
-export const SkillItem = ({ skill = 'No text', image, className, style }: Props) => {
+export const SkillItem = ({ skill = 'No text', image, icon, className = '' }: Props) => {
     return (
         <div className={`skill-item ${ className }`}>
-            <div className='picture-skill' style={style}>
-                <img src={image} alt="skill-picture" />
+            <div className='picture-skill'>
+                { image
+                    ? <img src={image} alt={skill} loading='lazy' />
+                    : <i className={`fa ${ icon }`} aria-hidden="true"></i> }
             </div>
-            <span style={{...style, backgroundColor: 'transparent'}}>{skill}</span>
+            <span>{skill}</span>
         </div>
     )
 }

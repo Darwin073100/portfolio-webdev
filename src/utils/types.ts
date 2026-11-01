@@ -36,14 +36,15 @@ export interface GlobalSkill {
     icon: string;
 }
 
-export interface SubSkill {
-    skill: string;
-    image: string;
-    style?: React.CSSProperties;
-}
+// Cada habilidad usa `image` (logo) o `icon` (clase de Font Awesome 4.7) cuando no hay logo disponible.
+export type SkillEntry =
+    | { name: string; image: string; icon?: never }
+    | { name: string; icon: string; image?: never };
 
-export interface Skill extends SubSkill {
-    tools: SubSkill[];
+export interface SkillGroup {
+    title: string;
+    icon: string;
+    skills: SkillEntry[];
 }
 
 export interface Technology {
@@ -69,6 +70,6 @@ export interface PortfolioData {
     contact: Contact[];
     certificates: Certificate[];
     globalSkill: GlobalSkill[];
-    tools: Skill[];
+    skillGroups: SkillGroup[];
     projects: Project[];
 }
