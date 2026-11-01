@@ -34,7 +34,8 @@ import vercelIcon from '../assets/vercel.svg';
 import html5 from '../assets/html5.svg';
 import css3 from '../assets/css3.svg';
 import bootstrapIcon from '../assets/bootstrap.svg';
-import jemae from '../assets/jemae1.png';
+import jeemaStore from '../assets/projects/jeema-store.png';
+import contaitscch from '../assets/projects/contaitscch.png';
 
 import facebook from '../assets/projects/facebook.png';
 import maqueta from '../assets/projects/maqueta-profile.png';
@@ -274,39 +275,81 @@ const data = {
     ],
     projects:[
         {
-            name: 'Control de inventarios',
-            description: `Una plataforma web, para llevar a cabo el control de inventarios, ventas, compras, clientes, emplados, 
-                para entrar y acceder a la plataforma ingresa con las siguientes credenciales, CORREO: jhon@jemae.platform.com, 
-                PASSWORD: admin123. El repositorio es privado. Usando tecnologías como,Nestjs, TypeORM, PostgreSql, Nextjs, ReactJs, Zustand, Typescrip y TailwindCSS.`,
-            github: 'https://github.com/Darwin073100/edyof-platform-web',
-            deploy: 'https://jemae-platform-web.vercel.app/auth/login',
-            picture: jemae,
+            name: 'JEEMA Store Platform',
+            kind: 'web',
+            featured: true,
+            year: '2025 – Actualidad',
+            description: 'Plataforma web de gestión comercial para controlar productos, inventario, ventas y compras de un negocio con varias sucursales.',
+            highlights: [
+                'Clean Architecture con pruebas unitarias y e2e en Jest',
+                'Entidades y migraciones con TypeORM sobre PostgreSQL',
+                'Migración documentada de Next.js 15 a 16, desplegada en Vercel',
+                'Más de 500 commits, con desarrollo asistido por Claude Code',
+            ],
+            github: 'https://github.com/Darwin073100/jeema-store-platform-web',
+            deploy: 'https://jeema-store-platform-web.vercel.app',
+            demoCredentials: { user: 'edwin', password: 'admin123' },
+            picture: jeemaStore,
             tecnologies:[
-                {
-                    name: 'JavaScript',
-                    picture: javascriptIcon
-                },
-                {
-                    name: 'Nest',
-                    picture: nestIcon
-                },
-                {
-                    name: 'PosgreSQL',
-                    picture: postgressqlIcon
-                },
-                {
-                    name: 'React',
-                    picture: reactIcon
-                },
-                {
-                    name: 'Next',
-                    picture: nextIcon
-                },
+                { name: 'TypeScript', picture: typescriptIcon },
+                { name: 'Next.js', picture: nextIcon },
+                { name: 'React', picture: reactIcon },
+                { name: 'TypeORM', picture: typeormIcon },
+                { name: 'PostgreSQL', picture: postgressqlIcon },
+                { name: 'Jest', picture: jestIcon },
+                { name: 'Vercel', picture: vercelIcon },
+            ]
+        },
+        {
+            name: 'JEEMA Transfer API',
+            kind: 'api',
+            featured: true,
+            year: '2025 – Actualidad',
+            description: 'API REST para registrar y controlar los traspasos de mercancía entre sucursales de la plataforma JEEMA.',
+            highlights: [
+                'Construida con NestJS siguiendo Clean Architecture',
+                'Entorno local contenerizado con Docker Compose',
+                'Pruebas unitarias y e2e con Jest',
+            ],
+            github: 'https://github.com/Darwin073100/jeema-transfer-platform-api',
+            deploy: null,
+            picture: null,
+            tecnologies:[
+                { name: 'TypeScript', picture: typescriptIcon },
+                { name: 'NestJS', picture: nestIcon },
+                { name: 'TypeORM', picture: typeormIcon },
+                { name: 'PostgreSQL', picture: postgressqlIcon },
+                { name: 'Docker', picture: dockerIcon },
+                { name: 'Jest', picture: jestIcon },
+            ]
+        },
+        {
+            name: 'CONTAITSCCH',
+            kind: 'mobile',
+            featured: true,
+            year: '2026',
+            description: 'App móvil para aprender contabilidad jugando: niveles, exámenes, puntos de experiencia (XP), rachas y ranking.',
+            highlights: [
+                'Offline-first con SQLite y sincronización con Supabase',
+                'Clean Architecture organizada por features',
+                'Pruebas con Jest',
+            ],
+            github: 'https://github.com/Darwin073100/contaitscch-app',
+            deploy: null,
+            picture: contaitscch,
+            tecnologies:[
+                { name: 'TypeScript', picture: typescriptIcon },
+                { name: 'React Native', picture: reactIcon },
+                { name: 'Expo', picture: expoIcon },
+                { name: 'SQLite', picture: sqliteIcon },
+                { name: 'Supabase', picture: supabaseIcon },
+                { name: 'Jest', picture: jestIcon },
             ]
         },
         {
             name: 'Journal App',
-            description: 'Esta aplicacion web esta conectada a una DB, donde se alojan las actividades diarias que una registra, deberas registrarte y loguearte antes.',
+            kind: 'web',
+            description: 'Aplicación web conectada a una base de datos donde registras tus actividades diarias. Es necesario registrarse e iniciar sesión.',
             github: 'https://github.com/Darwin073100/journal-app',
             deploy: 'https://journalappegq.netlify.app/',
             picture: journalapp,
@@ -331,7 +374,8 @@ const data = {
         },
         {
             name: 'Gif Expert',
-            description: 'Este proyecto está construido para buscar Gifs de los temas que pongamos en el buscador, al inicio muestra ya gif de una anime.',
+            kind: 'web',
+            description: 'Buscador de GIFs por tema. Al iniciar muestra GIFs de anime como ejemplo.',
             github: 'https://github.com/Darwin073100/gif-expert-app',
             deploy: 'https://gifexpertappegq.netlify.app/',
             picture: gifexpert,
@@ -352,7 +396,8 @@ const data = {
         },
         {
             name: 'Shop System',
-            description: 'En este proyecto vamos a controlar distintas entidades y procesos, es simular un sistema de administración, donde podamos tener Empleados, Productos, Clientes, Proveedores, entre otras entidades mas que se muestran en el diagrama mas adelante.',
+            kind: 'web',
+            description: 'Simulación de un sistema de administración para gestionar empleados, productos, clientes, proveedores y otras entidades del negocio.',
             github: 'https://github.com/Darwin073100/ShopSystem',
             deploy: null,
             picture: shopsystem,
@@ -372,8 +417,9 @@ const data = {
             ]
         },
         {
-            name: 'Crud SpringBoot & PostgreSQL (API REST)',
-            description: 'Construccion de una API REST con SpringBoot haciendo CRUD a una DB en PostgreSQL, esta api es consumida por react.js',
+            name: 'CRUD Spring Boot & PostgreSQL (API REST)',
+            kind: 'api',
+            description: 'API REST construida con Spring Boot que hace CRUD sobre una base de datos PostgreSQL y es consumida por un frontend en React.js.',
             github: 'https://github.com/Darwin073100/Crud-BackEnd-StringBoot/tree/react',
             deploy: null,
             picture: springReact,
@@ -393,8 +439,9 @@ const data = {
             ]
         },
         {
-            name: 'Clon login de facebook',
-            description: 'Es la maquetación de la pantalla del login de Facebook, esta solo adaptada para pantallas Desktop, ya que fue de practica, cuando estaba empezando a diseñar con html y css.',
+            name: 'Clon del login de Facebook',
+            kind: 'ui',
+            description: 'Maquetación de la pantalla de inicio de sesión de Facebook, adaptada solo a escritorio. Fue un proyecto de práctica de mis inicios con HTML y CSS.',
             github: 'https://github.com/Darwin073100/projects-ui',
             deploy: 'https://darwin073100.github.io/projects-ui/facebook/pages/login.html',
             picture: facebook,
@@ -411,7 +458,8 @@ const data = {
         },
         {
             name: 'Maquetación de un portafolio',
-            description: 'Hicimos un proyecto donde pudieramos plasmar las herramientas que manejamos, información personal, como tambien proyectos que hemos realizado, si podemos ver es la maquetación de este mismo sitio web.',
+            kind: 'ui',
+            description: 'Maquetación de un portafolio con herramientas, información personal y proyectos realizados. Es el diseño base de este mismo sitio web.',
             github: 'https://github.com/Darwin073100/projects-ui',
             deploy: 'https://darwin073100.github.io/projects-ui/profile/',
             picture: maqueta,
@@ -431,8 +479,9 @@ const data = {
             ]
         },
         {
-            name: 'Clon del home de Youtube',
-            description: 'En este proyecto vamos a ver un clon de la pagina Home de youtube, donde esta el catalago de videos y shorts, puedes ir a verlo, ya que esta publicado.',
+            name: 'Clon del home de YouTube',
+            kind: 'ui',
+            description: 'Clon de la página de inicio de YouTube con el catálogo de videos y shorts. Está publicado y puedes verlo en línea.',
             github: 'https://github.com/Darwin073100/youtube-clone',
             deploy: 'https://ephemeral-sunshine-a179ce.netlify.app/',
             picture: youtube,

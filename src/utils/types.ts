@@ -52,12 +52,21 @@ export interface Technology {
     picture: string;
 }
 
+export type ProjectKind = 'web' | 'api' | 'mobile' | 'ui';
+
 export interface Project {
     name: string;
+    kind: ProjectKind;
+    // Los proyectos destacados muestran año, highlights y credenciales de demo.
+    featured?: boolean;
+    year?: string;
     description: string;
-    github: string;
+    highlights?: string[];
+    github: string | null;
     deploy: string | null;
-    picture: string;
+    demoCredentials?: { user: string; password: string };
+    // null cuando no hay captura (p. ej. una API); se muestra un bloque alternativo.
+    picture: string | null;
     tecnologies: Technology[];
 }
 
