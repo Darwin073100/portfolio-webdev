@@ -1,6 +1,7 @@
 import { InfoItem } from '../components/InfoItem';
 import { BadgeList } from '../container/BadgeList'
 import reactIcon from '../../assets/developer.png';
+import { data } from '../../utils/data';
 import '../styles/container/ProfileCard.css';
 
 const infoItem = [
@@ -46,8 +47,8 @@ export const ProfileCard = () => {
                 <BadgeList badges={['CSS', 'HTML', 'JS', 'REACT']} />
             </div>
             <div className='profile-footer'>
-                <a className='button button-icon-white' href='/CV-Edwin-Garcia.pdf' download='CV-Edwin-Garcia-Quiterio.pdf'>
-                    <span>Dowload CV</span>
+                <a className='button button-icon-white' href={data.cvUrl} download='CV-Edwin-Garcia-Quiterio.pdf'>
+                    <span>Descargar CV</span>
                     <i className="fa fa-download" aria-hidden="true"></i>
                 </a>
             </div>

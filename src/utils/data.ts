@@ -37,6 +37,7 @@ import journalapp from '../assets/projects/journalapp.png';
 const data = {
     name: 'Edwin',
     surname: 'Garcia Quiterio',
+    cvUrl: '/CV-Edwin-Garcia-Quiterio.pdf',
     contact:[
         {
             id: 1,
