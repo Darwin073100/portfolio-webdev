@@ -26,6 +26,12 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    /* El título ocupa el espacio sobrante para que las imágenes de una fila queden alineadas. */
+    h3{
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+    }
     img, .certificate-placeholder{
         width: 100%;
         max-width: 500px;

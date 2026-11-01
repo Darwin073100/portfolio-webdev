@@ -58,6 +58,12 @@ import certSpringDataJpaBasesDeDatos from '../assets/certificates/spring-data-jp
 import certJavaSpringSecurity from '../assets/certificates/java-spring-security.png';
 import certBackendConNodeJsApiRest from '../assets/certificates/backend-con-node-js-api-rest.png';
 import certBackendConNodeJsDbPostgresql from '../assets/certificates/backend-con-node-js-db-postgresql.png';
+import certArquitecturasLimpias from '../assets/certificates/arquitecturas-limpias.png';
+import certClaudeCode from '../assets/certificates/claude-code.png';
+import certDockerFundamentos from '../assets/certificates/docker-fundamentos.png';
+import certIntroduccionALaIa from '../assets/certificates/introduccion-a-la-ia.png';
+import certJavaSeOrientadoAObjetos from '../assets/certificates/java-se-orientado-a-objetos.png';
+import certFundamentosDeTypescript from '../assets/certificates/fundamentos-de-typescript.png';
 
 import type { PortfolioData } from './types';
 
@@ -218,17 +224,17 @@ const data = {
             title: 'Arquitectura, IA y DevOps',
             icon: 'fa-cogs',
             certificates: [
-                { title: 'Arquitecturas Limpias', year: '2025' },
-                { title: 'Claude Code', year: '2026' },
-                { title: 'Docker: Fundamentos', year: '2026' },
-                { title: 'Introducción a la Inteligencia Artificial', year: '2025' },
+                { title: 'Arquitecturas Limpias para Desarrollo de Software', year: '2025', image: certArquitecturasLimpias },
+                { title: 'Claude Code', year: '2026', image: certClaudeCode },
+                { title: 'Docker: Fundamentos', year: '2026', image: certDockerFundamentos },
+                { title: 'Introducción a la Inteligencia Artificial', year: '2025', image: certIntroduccionALaIa },
             ]
         },
         {
             title: 'Java y POO',
             icon: 'fa-coffee',
             certificates: [
-                { title: 'Java SE Orientado a Objetos', year: '2023' },
+                { title: 'Java SE Orientado a Objetos', year: '2023', image: certJavaSeOrientadoAObjetos },
                 { title: 'Introducción a Java SE', year: '2023' },
                 { title: 'Curso de Java Spring', year: '2022', image: certCursoDeJavaSpring },
                 { title: 'Spring Data JPA: Bases de Datos', image: certSpringDataJpaBasesDeDatos },
@@ -239,7 +245,7 @@ const data = {
             title: 'TypeScript y React',
             icon: 'fa-code',
             certificates: [
-                { title: 'Fundamentos de TypeScript' },
+                { title: 'Fundamentos de TypeScript', year: '2023', image: certFundamentosDeTypescript },
                 { title: 'React.js: Manejo Profesional del Estado', image: certManejoProfesionalDelEstado },
                 { title: 'React.js: Patrones de Render y Composición', year: '2023', image: certPatronesDeRenderYComposicion },
             ]
