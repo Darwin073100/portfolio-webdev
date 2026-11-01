@@ -53,7 +53,6 @@ import certFullStackDeveloperConJavascript from '../assets/certificates/full-sta
 import certPatronesDeRenderYComposicion from '../assets/certificates/patrones-de-render-y-composicion.png';
 import certManejoProfesionalDelEstado from '../assets/certificates/manejo-profesional-del-estado.png';
 import certMaquetacionEnCss from '../assets/certificates/maquetacion-en-css.png';
-import certFrontendDeveloper from '../assets/certificates/frontend-developer.png';
 import certCursoDeJavaSpring from '../assets/certificates/curso-de-java-spring.png';
 import certSpringDataJpaBasesDeDatos from '../assets/certificates/spring-data-jpa-bases-de-datos.png';
 import certJavaSpringSecurity from '../assets/certificates/java-spring-security.png';
@@ -213,47 +212,48 @@ const data = {
             img: 'https://cdn.icon-icons.com/icons2/72/PNG/256/mobile_phone_14388.png'
         }
     ],
-    certificates:[
+    // Los cursos sin `image` se muestran como tarjeta de texto hasta tener la captura del certificado.
+    certificateGroups:[
         {
-            title: 'Full Stack Developer con JavaScript',
-            image: certFullStackDeveloperConJavascript
+            title: 'Arquitectura, IA y DevOps',
+            icon: 'fa-cogs',
+            certificates: [
+                { title: 'Arquitecturas Limpias', year: '2025' },
+                { title: 'Claude Code', year: '2026' },
+                { title: 'Docker: Fundamentos', year: '2026' },
+                { title: 'Introducción a la Inteligencia Artificial', year: '2025' },
+            ]
         },
         {
-            title: 'Patrones de Render y Composición',
-            image: certPatronesDeRenderYComposicion
+            title: 'Java y POO',
+            icon: 'fa-coffee',
+            certificates: [
+                { title: 'Java SE Orientado a Objetos', year: '2023' },
+                { title: 'Introducción a Java SE', year: '2023' },
+                { title: 'Curso de Java Spring', year: '2022', image: certCursoDeJavaSpring },
+                { title: 'Spring Data JPA: Bases de Datos', image: certSpringDataJpaBasesDeDatos },
+                { title: 'Java Spring Security', image: certJavaSpringSecurity },
+            ]
         },
         {
-            title: 'Manejo Profesional del Estado',
-            image: certManejoProfesionalDelEstado
+            title: 'TypeScript y React',
+            icon: 'fa-code',
+            certificates: [
+                { title: 'Fundamentos de TypeScript' },
+                { title: 'React.js: Manejo Profesional del Estado', image: certManejoProfesionalDelEstado },
+                { title: 'React.js: Patrones de Render y Composición', year: '2023', image: certPatronesDeRenderYComposicion },
+            ]
         },
         {
-            title: 'Maquetación en CSS',
-            image: certMaquetacionEnCss
+            title: 'JavaScript, Node.js y CSS',
+            icon: 'fa-server',
+            certificates: [
+                { title: 'Full Stack Developer con JavaScript', image: certFullStackDeveloperConJavascript },
+                { title: 'Backend con Node.js: API REST', image: certBackendConNodeJsApiRest },
+                { title: 'Backend con Node.js: DB PostgreSQL', image: certBackendConNodeJsDbPostgresql },
+                { title: 'Maquetación en CSS', image: certMaquetacionEnCss },
+            ]
         },
-        {
-            title: 'Frontend Developer',
-            image: certFrontendDeveloper
-        },
-        {
-            title: 'Curso de Java Spring',
-            image: certCursoDeJavaSpring
-        },
-        {
-            title: 'Spring Data JPA: Bases de Datos',
-            image: certSpringDataJpaBasesDeDatos
-        },
-        {
-            title: 'Java Spring Security',
-            image: certJavaSpringSecurity
-        },
-        {
-            title: 'Backend con Node.js: API REST',
-            image: certBackendConNodeJsApiRest
-        },
-        {
-            title: 'Backend con Node.js: DB PostgreSQL',
-            image: certBackendConNodeJsDbPostgresql
-        }
     ],
     globalSkill:[
         {

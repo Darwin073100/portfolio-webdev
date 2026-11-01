@@ -1,28 +1,67 @@
-.certificates-content{
+.certificate-group{
     margin-top: 40px;
+}
+
+.certificate-group-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 400;
+    i{
+        color: var(--green-color-100);
+    }
+}
+
+.certificates-content{
+    margin-top: 20px;
     display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
 }
 
 .certificate-item{
     text-align: center;
-    img{
-        width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    img, .certificate-placeholder{
+        width: 100%;
+        max-width: 500px;
+        aspect-ratio: 864 / 668;
         border-radius: 12px;
         box-shadow: 6px 6px var(--green-color-100);
+    }
+    img{
+        object-fit: cover;
+    }
+}
+
+.certificate-placeholder{
+    box-sizing: border-box;
+    padding: 24px;
+    background-color: var(--dark-color-90);
+    border: 1px solid var(--dark-color-50);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    i{
+        font-size: 56px;
+        color: var(--green-color-100);
+    }
+    span{
+        font-size: 22px;
+    }
+    small{
+        color: var(--light-color-60);
     }
 }
 
 @media (max-width: 480px) {
     .certificates-content{
-        margin-top: 20px;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-    
-    .certificate-item{
-        img{
-            width: 300px;
-        }
+        grid-template-columns: 1fr;
     }
 }

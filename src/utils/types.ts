@@ -37,7 +37,14 @@ export interface Stat {
 
 export interface Certificate {
     title: string;
-    image: string;
+    year?: string;
+    image?: string;
+}
+
+export interface CertificateGroup {
+    title: string;
+    icon: string;
+    certificates: Certificate[];
 }
 
 export interface GlobalSkill {
@@ -89,7 +96,7 @@ export interface PortfolioData {
     experience: TimelineEntry[];
     education: TimelineEntry[];
     contact: Contact[];
-    certificates: Certificate[];
+    certificateGroups: CertificateGroup[];
     globalSkill: GlobalSkill[];
     skillGroups: SkillGroup[];
     projects: Project[];
