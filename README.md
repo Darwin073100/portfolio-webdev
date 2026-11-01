@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# Portafolio · Edwin García Quiterio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portafolio personal de **Edwin García Quiterio**, desarrollador Full Stack y Móvil (TypeScript · React · Next.js · NestJS · React Native · PostgreSQL).
 
-Currently, two official plugins are available:
+🔗 **En línea:** [edwinegq-portfolio.netlify.app](https://edwinegq-portfolio.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Secciones
 
-## Expanding the ESLint configuration
+| Ruta | Contenido |
+|---|---|
+| `/home` | Perfil, resumen, indicadores y descarga del CV |
+| `/about` | Perfil profesional, idiomas, experiencia y educación |
+| `/skills` | Habilidades agrupadas por área |
+| `/works` | Proyectos, con demo y código cuando están disponibles |
+| `/certificates` | Certificados de Platzi agrupados por tema |
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Stack
 
-- Configure the top-level `parserOptions` property like this:
+React 18 · TypeScript · Vite 5 · React Router 6 · CSS plano · Font Awesome 4.7
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Todo el contenido vive en [`src/utils/data.ts`](src/utils/data.ts), tipado con [`src/utils/types.ts`](src/utils/types.ts). Para actualizar proyectos, habilidades, experiencia o certificados solo hay que editar ese archivo.
+
+## Desarrollo
+
+Requiere Node.js y [pnpm](https://pnpm.io).
+
+```bash
+pnpm install
+pnpm dev       # http://localhost:5173
+pnpm build     # verifica tipos y genera dist/
+pnpm lint
+pnpm preview   # sirve el build de dist/
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Despliegue
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+El sitio está pensado para Netlify: el comando de build es `pnpm build` y el directorio de publicación es `dist/`. El archivo [`public/_redirects`](public/_redirects) redirige todas las rutas a `index.html`, para que recargar una ruta como `/works` no devuelva 404.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Créditos
+
+Íconos de tecnologías de [devicon](https://github.com/devicons/devicon) (MIT) y [Simple Icons](https://simpleicons.org) (CC0). Íconos de interfaz de [Font Awesome 4.7](https://fontawesome.com/v4/) (SIL OFL / MIT).

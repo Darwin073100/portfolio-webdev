@@ -2,10 +2,17 @@
 
 | Campo | Valor |
 |---|---|
-| Estado | Borrador, pendiente de aprobación |
+| Estado | Implementado (F0–F7) en la rama `feature/actualizacion-portafolio-cv` |
 | Fecha | 2026-11-01 |
 | Fuente de verdad | `CV_Edwin_Garcia_Quiterio (1).pdf` (Descargas, 2026-11-01) |
 | Alcance | Contenido (proyectos, habilidades, experiencia, certificados, perfil) + CV descargable + correcciones necesarias para soportarlo |
+
+> **Desviaciones respecto del plan original:**
+> - **Respuestas a las preguntas abiertas:** P1, capturas proporcionadas para JEEMA Store y CONTAITSCCH; la API no tiene captura. P2, se eliminó "Control de inventarios". P3, se agregaron 6 de los 7 certificados nuevos; falta la imagen de "Introducción a Java SE". P4, no se publicó el teléfono. P5, los tres repos son públicos. P6, se quitaron "Blogs" y el buscador.
+> - **Certificados:** se eliminó "Frontend Developer", que mostraba la imagen de otro curso. Quedan 16 certificados, no 17.
+> - **T3:** `Button.tsx` y `ButtonIcon.tsx` no se corrigieron; se eliminaron porque nadie los usaba.
+> - **Íconos sin logo:** NativeWind y Claude Code usan íconos de Font Awesome. React Native usa el logo de React.
+> - **Pendiente:** responsive en móvil, un problema anterior a esta actualización que queda fuera de alcance (§3).
 
 ## 1. Objetivo
 
