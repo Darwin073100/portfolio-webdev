@@ -1,0 +1,28 @@
+.timeline-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+    font-size: 22px;
+    font-weight: 400;
+    i{
+        color: var(--green-color-100);
+    }
+}
+
+.timeline-list{
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 8px;
+        bottom: 8px;
+        left: 23px;
+        width: 2px;
+        background-color: var(--dark-color-50);
+    }
+}

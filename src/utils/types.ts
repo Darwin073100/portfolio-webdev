@@ -15,10 +15,20 @@ export interface Profile {
     title: string;
     headline: string;
     summary: string;
+    about: string;
+    languages: string;
     email: string;
     badges: string[];
     info: InfoEntry[];
 }
+
+// Igual que SkillEntry: `logo` (imagen) o `icon` (Font Awesome 4.7) cuando no hay logo.
+export type TimelineEntry = {
+    role: string;
+    place: string;
+    period: string;
+    bullets: string[];
+} & ({ logo: string; icon?: never } | { icon: string; logo?: never });
 
 export interface Stat {
     value: string;
@@ -76,6 +86,8 @@ export interface PortfolioData {
     cvUrl: string;
     profile: Profile;
     stats: Stat[];
+    experience: TimelineEntry[];
+    education: TimelineEntry[];
     contact: Contact[];
     certificates: Certificate[];
     globalSkill: GlobalSkill[];

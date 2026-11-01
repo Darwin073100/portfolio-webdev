@@ -3,7 +3,7 @@
     margin-right: 20px;
     display: flex;
     width: calc(100%)-20px;
-    height: 100vh;
+    padding: 60px 0 20px 0;
     gap: 100px;
     justify-content: center;
     align-items: center;
@@ -36,7 +36,31 @@
     font-size: 22px;
 }
 
+.about-languages{
+    margin-top: 14px;
+    i{
+        color: var(--green-color-100);
+    }
+}
+
+.about-timelines{
+    margin: 40px 20px 60px 120px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+    align-items: start;
+}
+
+@media (max-width: 1024px) {
+    .about-timelines{
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 480px) {
+    .about-timelines{
+        margin: 30px 16px 40px 50px;
+    }
     .about-page{
         flex-direction: column;
         margin-left: 50px;

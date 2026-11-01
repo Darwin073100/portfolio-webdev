@@ -37,6 +37,10 @@ import bootstrapIcon from '../assets/bootstrap.svg';
 import jeemaStore from '../assets/projects/jeema-store.png';
 import contaitscch from '../assets/projects/contaitscch.png';
 
+import cenidetLogo from '../assets/cenidet.png';
+import itscchLogo from '../assets/itscch.jpeg';
+import conalepLogo from '../assets/conalep.png';
+
 import facebook from '../assets/projects/facebook.png';
 import maqueta from '../assets/projects/maqueta-profile.png';
 import youtube from '../assets/projects/youtube.png';
@@ -66,6 +70,8 @@ const data = {
         title: 'Desarrollador Full Stack y Móvil',
         headline: 'Desarrollador Full Stack',
         summary: 'Construyo aplicaciones web y móviles con TypeScript, React, Next.js, NestJS y React Native, aplicando Clean Architecture y pruebas con Jest.',
+        about: 'Soy desarrollador Full Stack con 2 años de experiencia construyendo aplicaciones web con TypeScript, React, Next.js y NestJS sobre PostgreSQL, y apps móviles con React Native, con una base sólida en programación orientada a objetos con Java. Aplico Clean Architecture, diseño APIs REST y escribo pruebas con Jest. Integro Claude Code en mi flujo de trabajo para acelerar el desarrollo sin sacrificar calidad. Actualmente desarrollo JEEMA, una plataforma de gestión comercial con más de 500 commits.',
+        languages: 'Español nativo · Inglés básico (A1), con comprensión de lectura de documentación técnica',
         email: 'edwinegq@outlook.com',
         badges: ['TypeScript', 'React', 'Next.js', 'NestJS', 'React Native', 'PostgreSQL'],
         info: [
@@ -103,6 +109,82 @@ const data = {
         {
             value: '500+',
             label: 'Commits en JEEMA'
+        },
+    ],
+    experience: [
+        {
+            role: 'Desarrollador Móvil',
+            place: 'CONTAITSCCH (proyecto propio)',
+            period: '2026',
+            icon: 'fa-mobile',
+            bullets: [
+                'App móvil para aprender contabilidad (niveles, exámenes, XP, rachas y ranking) con React Native, Expo y TypeScript.',
+                'Arquitectura offline-first con SQLite y sincronización con Supabase, Clean Architecture por features y pruebas con Jest.',
+            ]
+        },
+        {
+            role: 'Desarrollador Full Stack',
+            place: 'JEEMA (proyecto propio)',
+            period: '2025 – Actualidad',
+            icon: 'fa-shopping-cart',
+            bullets: [
+                'Diseñé y desarrollé una plataforma web de gestión comercial (productos, inventario, ventas y compras) con Next.js, React 19, TypeScript, TypeORM y PostgreSQL.',
+                'Construí una API REST con NestJS para traspasos de mercancía, con entorno local contenerizado mediante Docker Compose.',
+                'Apliqué Clean Architecture en ambos proyectos, con pruebas unitarias y e2e en Jest y migraciones de TypeORM.',
+                'Desplegué en Vercel, documenté la migración de Next.js 15 a 16 e integré Claude Code (subagentes y CLAUDE.md) en el desarrollo.',
+            ]
+        },
+        {
+            role: 'Desarrollador Web Full Stack',
+            place: 'Freelance',
+            period: '2024 – Actualidad',
+            icon: 'fa-laptop',
+            bullets: [
+                'Levanté requerimientos con historias de usuario y mockups; desarrollé interfaces en React/Next.js y servicios en NestJS.',
+            ]
+        },
+        {
+            role: 'Auxiliar de Sistemas',
+            place: 'Cooperativa Suljaa',
+            period: '2024',
+            icon: 'fa-wrench',
+            bullets: [
+                'Soporte técnico a matriz y sucursales, administración de red y mantenimiento de equipos de cómputo.',
+            ]
+        },
+        {
+            role: 'Desarrollador Web (prácticas)',
+            place: 'Proyecto freelance',
+            period: '2023',
+            icon: 'fa-code',
+            bullets: [
+                'Sistema de administración de archivos con Java (programación orientada a objetos), JSF, EJB y PostgreSQL.',
+            ]
+        },
+        {
+            role: 'Residencia Profesional',
+            place: 'CENIDET, Cuernavaca, Morelos',
+            period: '2023',
+            logo: cenidetLogo,
+            bullets: [
+                'Desarrollé una aplicación móvil de mensajería por voz con Java (POO) y Android Studio.',
+            ]
+        },
+    ],
+    education: [
+        {
+            role: 'Ingeniería en Tecnologías de la Información y Comunicaciones',
+            place: 'Tec. Superior de la Costa Chica',
+            period: '2018 – 2024',
+            logo: itscchLogo,
+            bullets: []
+        },
+        {
+            role: 'Profesional Técnico Bachiller en Informática',
+            place: 'CONALEP 139, Ometepec, Gro.',
+            period: '2015 – 2018',
+            logo: conalepLogo,
+            bullets: []
         },
     ],
     contact:[
